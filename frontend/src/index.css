@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
