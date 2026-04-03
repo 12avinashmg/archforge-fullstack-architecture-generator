@@ -1,6 +1,6 @@
 
 # ================================================================
-# FOUNDRYAI — ML API SERVER
+# ArchForge — ML API SERVER
 # Serves architecture predictions to Spring Boot backend
 # Run: uvicorn main:app --reload --port 8000
 # ================================================================
@@ -13,7 +13,7 @@ import json
 import os
 
 app = FastAPI(
-    title="FoundryAI ML API",
+    title="ArchForge ML API",
     description="Architecture recommendation engine for fintech apps",
     version="1.0.0"
 )
@@ -30,10 +30,10 @@ app.add_middleware(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(
     BASE_DIR, "..", "ml-brain",
-    "foundryai_module_classifier_files"
+    "ArchForge_module_classifier_files"
 )
 
-print("Loading FoundryAI ML models...")
+print("Loading ArchForge ML models...")
 
 try:
     model = joblib.load(os.path.join(MODEL_DIR, "architecture_model.pkl"))
@@ -59,7 +59,7 @@ class ModuleRequest(BaseModel):
 @app.get("/")
 def root():
     return {
-        "status": "FoundryAI ML API is running",
+        "status": "ArchForge ML API is running",
         "architectures_loaded": len(architecture_data),
         "endpoints": [
             "POST /predict          → predict from text query",

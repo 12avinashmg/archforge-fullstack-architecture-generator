@@ -10,9 +10,9 @@ const API = "http://localhost:8000/api/architecture";
 
 /* ─── Demo Accounts (Login Only — No Registration) ─────────────────────── */
 const DEMO_USERS = [
-  { email: "rahul@foundryai.com",  password: "Rahul@123",  name: "Rahul Sharma",  phone: "9876543210" },
+  { email: "rahul@ArchForge.com",  password: "Rahul@123",  name: "Rahul Sharma",  phone: "9876543210" },
   { email: "priya@fintech.com",    password: "Priya@123",  name: "Priya Patel",   phone: "9123456780" },
-  { email: "admin@foundryai.com",  password: "Admin@123",  name: "Admin User",    phone: "9000000001" },
+  { email: "admin@ArchForge.com",  password: "Admin@123",  name: "Admin User",    phone: "9000000001" },
 ];
 
 /* ─── Node Registry ────────────────────────────────────────────────────── */
@@ -1577,7 +1577,7 @@ export default function App() {
           <div style={{ display:"flex", alignItems:"center", gap:9, flexShrink:0 }}>
             <div style={{ width:34, height:34, background:"linear-gradient(135deg,#3b82f6,#8b5cf6)", borderRadius:9, display:"flex", alignItems:"center", justifyContent:"center", fontWeight:900, fontSize:16, boxShadow:"0 0 16px #3b82f655" }}>F</div>
             <div>
-              <div style={{ fontWeight:900, fontSize:16, background:"linear-gradient(90deg,#60a5fa,#a78bfa)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>FoundryAI</div>
+              <div style={{ fontWeight:900, fontSize:16, background:"linear-gradient(90deg,#60a5fa,#a78bfa)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>ArchForge</div>
               <div style={{ fontSize:10, color:"#475569", marginTop:-2 }}>Fintech Architecture Platform</div>
             </div>
           </div>
